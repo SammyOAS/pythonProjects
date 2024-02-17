@@ -49,10 +49,7 @@ while True:
         print('Você perdeu!\n')
         computerWins += 1
         
+        
 print(f'Você ganhou {userWins} pontos!\n')
-
 print(f'O computador ganhou {computerWins} pontos!\n')
 print('Até mais!\n')
-
-print(f'Você ganhou {computerWins} pontos!\n')
-print('Goodbye!\n')
