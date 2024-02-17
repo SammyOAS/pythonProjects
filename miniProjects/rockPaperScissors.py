@@ -18,11 +18,16 @@ while True:
     
     randomNumber = random.randint(0, 2)
     # pedra: 0, papel: 1, tesoura: 2
+    
     computerChoice = options[randomNumber]
     print(f'\nComputador escolhe {computerChoice}.\n')
 
+    if userChoice == computerChoice:
+        print('Empate!\n')
+        continue
+
     if userChoice == 'pedra' and computerChoice == 'tesoura':
-        print('Você ganhou!')
+        print('Você ganhou!\n')
         userWins += 1
 
     elif userChoice == 'papel' and computerChoice == 'pedra':
@@ -38,5 +43,5 @@ while True:
         computerWins += 1
         
 print(f'Você ganhou {userWins} pontos!\n')
-print(f'Você ganhou {computerWins} pontos!\n')
-print('Goodbye!\n')
+print(f'O computador ganhou {computerWins} pontos!\n')
+print('Até mais!\n')
