@@ -28,6 +28,13 @@ while True:
 
     if userChoice == 'pedra' and computerChoice == 'tesoura':
         print('Você ganhou!\n')
+        
+    computerChoice = options[randomNumber]
+    print(f'\nComputador escolhe {computerChoice}.\n')
+
+    if userChoice == 'pedra' and computerChoice == 'tesoura':
+        print('Você ganhou!')
+
         userWins += 1
 
     elif userChoice == 'papel' and computerChoice == 'pedra':
@@ -43,5 +50,9 @@ while True:
         computerWins += 1
         
 print(f'Você ganhou {userWins} pontos!\n')
+
 print(f'O computador ganhou {computerWins} pontos!\n')
 print('Até mais!\n')
+
+print(f'Você ganhou {computerWins} pontos!\n')
+print('Goodbye!\n')
